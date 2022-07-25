@@ -16,8 +16,6 @@ export default function App() {
         .get("http://localhost:5001/api/movies") // Study this endpoint with Postman
         .then((response) => {
           setMovieList(response.data);
-          // Study this response with a breakpoint or log statements
-          // and set the response data as the 'movieList' slice of state
         })
         .catch((error) => {
           console.error("Server Error", error);
